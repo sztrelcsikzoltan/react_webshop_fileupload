@@ -24,10 +24,11 @@ function ProductUpdate() {
                     // e.persist();
                     e.preventDefault();
 
-                    if (e.target.elements.name.value != "" &&
-                        e.target.elements.price.value != ""
-                       
-                        
+                    if (e.target.elements.name.value !== "" &&
+                        e.target.elements.description.value !== "" &&
+                        e.target.elements.price.value !== ""
+
+
                         // e.target.elements.imglink.value
                     ) {
 
@@ -42,8 +43,9 @@ function ProductUpdate() {
                             body: JSON.stringify({
                                 id: productId,
                                 name: e.target.elements.name.value,
+                                description: e.target.elements.description.value,
                                 price: e.target.elements.price.value,
-                                
+
                                 // imglink: e.target.elements.imglink.value
                                 imglink: imglink
                             })
@@ -55,8 +57,8 @@ function ProductUpdate() {
                                 navigate("/update");
                             })
                             .catch(console.log);
-                    
-                        }
+
+                    }
                     else {
                         alert("Fields must be filled out!");
                     }
@@ -66,6 +68,12 @@ function ProductUpdate() {
                     <label className='col-sm-2 mt-2'>Name:</label>
                     <div className='col-sm-9'>
                         <input className='form-control text-center-onsmallscreen' type="text" name="name" defaultValue={product.name} />
+                    </div>
+                </div>
+                <div className='row mb-3'>
+                    <label className='col-sm-2 mt-2'>Description:</label>
+                    <div className='col-sm-9'>
+                        <textarea className='form-control text-center-onsmallscreen' rows="4" name="description" defaultValue={product.description} />
                     </div>
                 </div>
                 <div className='row mb-3'>
