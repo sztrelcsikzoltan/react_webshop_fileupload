@@ -17,11 +17,12 @@ function ProductSinglePage() {
 
 
     return (
-        <div className='text-center mt-2'>
+        <div className='text-center m-2'>
             <div>
                 <button className='btn btn-info' onClick={() => { navigate('/') }}>Back</button>
             </div>
             <h5>{product.name}</h5>
+            <div className='small'>{product.description}</div>
             <div>{productPrice}</div>
             <img className='img-fluid p-2' src={`https://localhost:44393/images/${product.imglink}` ? `https://localhost:44397/images/${product.imglink}` : "https://via.placeholder.com/400x400"} alt={product.name} />
 
