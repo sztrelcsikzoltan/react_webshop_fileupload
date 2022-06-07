@@ -49,5 +49,9 @@
 .border-bottom {
     border-style: solid;
     border-color: salmon;
-    border-width: 2px !important;
+    border-width: 3px !important;
+}
+
+.small {
+    text-align: justify;
 }
