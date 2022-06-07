@@ -11,7 +11,7 @@ function ProductDelete() {
     useEffect(() => {
         fetch(`https://localhost:44397/GetProduct?productId=${productId}`)
             .then(res => res.json())
-            .then(product => { setProduct(product); setProductPrice(product.price + " Ft"); console.log(product); console.log(product.name); })
+            .then(product => { setProduct(product); setProductPrice(product.price + " EUR"); console.log(product); console.log(product.name); })
             .catch(console.log);
     }, [productId]);
 

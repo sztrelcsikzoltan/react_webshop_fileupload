@@ -24,7 +24,7 @@ function ProductUpdatePage() {
                     <div className='col-sm-3 align-self-center'>
                         <h5>{product.name}</h5>
                     </div>
-                    <div className='col-sm-2 align-self-center'>{product.price}</div>
+                    <div className='col-sm-2 align-self-center'>{product.price} EUR</div>
                 </div >
             ))
             }

@@ -65,13 +65,17 @@ function ProductUpdate() {
                 <div className='row mb-3'>
                     <label className='col-sm-2 mt-2'>Name:</label>
                     <div className='col-sm-9'>
-                        <input className='form-control' type="text" name="name" defaultValue={product.name} />
+                        <input className='form-control text-center-onsmallscreen' type="text" name="name" defaultValue={product.name} />
                     </div>
                 </div>
                 <div className='row mb-3'>
                     <label className='col-sm-2 mt-2'>Price:</label>
                     <div className='col-sm-9'>
-                        <input className='form-control' type="number" name="price" defaultValue={product.price} />
+                        <input className='form-control text-center-onsmallscreen' type="number" name="price" defaultValue={product.price} />
+
+                    </div>
+                    <div className='col-sm-1 mt-2 margin-minus20'>
+                        EUR
                     </div>
                 </div>
                 {/* <div className='row mb-3'>
