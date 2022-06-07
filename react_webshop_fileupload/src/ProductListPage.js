@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function ProductListPage() {
     const [products, setProducts] = useState([]);
+    const navigate = useNavigate();
     // localStorage.setItem("global", 1);
     // const global = localStorage.getItem("global");
 
@@ -37,6 +38,10 @@ function ProductListPage() {
                         <NavLink className="no-decor" to={"/product/" + product.id} >
                             {product.price} EUR
                         </NavLink>
+                    </div>
+                    <div className='col-sm-1 align-self-center'>
+                        <button className='btn btn-primary m-2 btn-width95' onClick={() => { navigate(`update/${product.id}`) }} >Update</button>                                                
+                        <button className='btn btn-danger m-2 btn-width95' onClick={() => { navigate(`delete/${product.id}`) }} >Delete</button>                                                
                     </div>
                 </div>
             ))

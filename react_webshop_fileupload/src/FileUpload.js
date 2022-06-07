@@ -45,7 +45,7 @@ export const FileUpload = () => {
         <div>
             <div className="row mb-3">
                 <div className="col-sm-2"></div>
-                <div className="col-sm-6">
+                <div className="col-sm-6 mb-2">
                     <input className="form-control" type="file" onChange={saveFile} />
                 </div>
                 <div className="col-sm-2">

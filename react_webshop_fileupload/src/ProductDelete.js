@@ -18,9 +18,9 @@ function ProductDelete() {
     return (
         <div className='text-center m-2'>
             <div>
-                <button className='btn btn-info mb-2' onClick={() => { navigate('/delete') }}>Back</button>
+                <button className='btn btn-info mb-2 btn-width140' onClick={() => { navigate('/') }}>Back</button>
             </div>
-            <button className='btn btn-danger mb-2' onClick={() => {
+            <button className='btn btn-danger mb-2 btn-width140' onClick={() => {
                 fetch(`https://localhost:44397/DeleteProduct?productId=${productId}`, {
                     method: "DELETE",
                     headers: { "Content-Type": "application/json" },

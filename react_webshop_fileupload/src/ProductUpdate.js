@@ -96,9 +96,9 @@ function ProductUpdate() {
                     <FileUpload />
                 </div>
                 <div>
-                    <button className='btn btn-success mb-2' type='submit'>Update product</button>
+                    <button className='btn btn-success mb-2 btn-width140' type='submit'>Update product</button>
                 </div>
-                <button className='btn btn-info' type='button' onClick={() => { navigate("/update") }}>Back</button>
+                <button className='btn btn-info btn-width140' type='button' onClick={() => { navigate("/") }}>Back</button>
             </form>
         </div >
     )

@@ -86,9 +86,9 @@ function ProductCreatePage() {
                     <FileUpload />
                 </div>
                 <div>
-                    <button className='btn btn-success mb-2' type='submit'>Add product</button>
+                    <button className='btn btn-success mb-2 btn-width123' type='submit'>Add product</button>
                 </div>
-                <button className='btn btn-info' type='button' onClick={() => { navigate("/") }}>Back</button>
+                <button className='btn btn-info btn-width123' type='button' onClick={() => { navigate("/") }}>Back</button>
             </form>
         </div >
     )

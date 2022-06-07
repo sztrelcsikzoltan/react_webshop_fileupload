@@ -36,3 +36,15 @@ button {
 .no-decor {
     text-decoration: none !important;
 }
+
+.btn-width95 {
+    width: 95px;
+}
+
+.btn-width123 {
+    width: 123px;
+}
+
+.btn-width140 {
+    width: 140px;
+}
