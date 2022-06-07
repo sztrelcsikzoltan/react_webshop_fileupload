@@ -31,6 +31,7 @@ function ProductCreatePage() {
                                         headers: { "Content-Type": "application/json" },
                                         body: JSON.stringify({
                                             name: e.target.elements.name.value,
+                                            description: e.target.elements.description.value,
                                             price: e.target.elements.price.value,
                                             // imglink: e.target.elements.imglink.value
 
@@ -61,6 +62,12 @@ function ProductCreatePage() {
                     <label className='col-sm-2 mt-2'>Name:</label>
                     <div className='col-sm-9'>
                         <input className='form-control' type="text" name="name" />
+                    </div>
+                </div>
+                <div className='row mb-3'>
+                    <label className='col-sm-2 mt-2'>Description:</label>
+                    <div className='col-sm-9'>
+                        <textarea className='form-control' rows="4" name="description" />
                     </div>
                 </div>
                 <div className='row mb-3'>
