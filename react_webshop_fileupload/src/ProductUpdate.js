@@ -54,7 +54,7 @@ function ProductUpdate() {
                             .then(() => {
                                 // alert(`Product '${e.target.elements.name.value}' was added.`);
                                 alert(`Product was updated.`);
-                                navigate("/update");
+                                navigate("/");
                             })
                             .catch(console.log);
 
